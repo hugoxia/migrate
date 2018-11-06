@@ -1,4 +1,5 @@
 import os
+import fire
 
 from .migration import set_version, get_versions, get_current_version, \
     set_history_version, version_dir, Migration
@@ -57,3 +58,10 @@ def down_to(version):
         _, err_msg = Migration(current_version, all_versions).down()
         if err_msg:
             return err_msg
+
+def main():
+    fire.Fire()
+
+
+if __name__ == '__main__':
+    fire.Fire()
