@@ -6,4 +6,4 @@ Migrate database migration tool.
 - migrate up
 - migrate up_to [version]
 - migrate down
-- migrate down to [version]
+- migrate down_to [version]
